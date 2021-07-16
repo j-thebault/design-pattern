@@ -13,19 +13,19 @@ class SubjectTest {
         Observer observerOne = new ObserverOne(counter);
         Observer observerTwo = new ObserverTwo(counter);
         Observer moreObserverTwo = new ObserverTwo(counter);
-        // ajouter le subject et enregistrer les 3 instance d'obervers
+        // ajouter le subject et enregistrer les 3 instance d'observers
         Subject subject = new SubjectImpl();
         subject.register(observerOne);
         subject.register(observerTwo);
         subject.register(moreObserverTwo);
-        // emmetre un evenement
+        // envoyer un évènement
         subject.notifyAllObservers();
-        // vérifiez que la coumpteur partagé est bien à 3
+        // vérifiez que la compteur partagé est bien à 3
         Assertions.assertEquals(3, counter.getCount());
         subject.unregister(observerOne);
-        // emmetre un second evenement, mais il n'y a plus que deux observers
+        // envoyer un second évènement, mais il n'y a plus que deux observers
         subject.notifyAllObservers();
-        // vérifiez que la coumpteur partagé est bien à 5 (et pas 6 ^^)
+        // vérifiez que la compteur partagé est bien à 5 (et pas 6 ^^)
         Assertions.assertEquals(5, counter.getCount());
     }
 
