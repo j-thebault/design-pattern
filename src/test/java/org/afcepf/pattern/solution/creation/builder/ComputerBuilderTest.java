@@ -1,12 +1,11 @@
 package org.afcepf.pattern.solution.creation.builder;
 
+import static org.afcepf.pattern.solution.creation.builder.Memory._4GO;
+import static org.afcepf.pattern.solution.creation.builder.OperatingSystem.WINDOWS;
+import static org.afcepf.pattern.solution.creation.builder.Processor.INTEL_I7;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.afcepf.pattern.solution.creation.builder.Memory.*;
-import static org.afcepf.pattern.solution.creation.builder.OperatingSystem.*;
-import static org.afcepf.pattern.solution.creation.builder.Processor.INTEL_I7;
-import static org.junit.jupiter.api.Assertions.*;
 
 class ComputerBuilderTest {
 
