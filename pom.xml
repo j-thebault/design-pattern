@@ -13,6 +13,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <junit-jupiter-api.version>5.7.2</junit-jupiter-api.version>
         <junit-platform.version>1.7.2</junit-platform.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
