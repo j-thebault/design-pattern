@@ -2,13 +2,13 @@ package org.afcepf.pattern.solution.creation.builder;
 
 import static java.util.Objects.requireNonNull;
 
-// Toute la logique de domaine est délégué dans les value objects
-// La classe computer se comporte comme un Aggregat de ses objets propriété
-// Aucune propriété n'est une primitive nue.
+// Toute la logique de domaine est déléguée dans les value objects
+// La classe computer se comporte comme un Agrégat de ses propriétés
+// Aucune propriété est une primitive nue.
 // ValueObject Pattern en DDD ou Expert en Information du GRASP
 public class Computer {
 	private final Processor cpu;
-	private final Memory ram; // A simple value object ...
+	private final Memory ram; // Simple ValueObject, qui est un véritable type, non énuméré
 	private final OperatingSystem os;
 
 	Computer(Processor cpu, Memory ram, OperatingSystem operatingSystem) {
